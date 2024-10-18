@@ -34,6 +34,18 @@
                 <span class="word">VEGETABLE CURRY</span>
             </div>
         </div>
+
+        <div class="searchStraightener">
+            <div class="searchContainer">
+                <input 
+                    id="searchSubmit"
+                    type="text"
+                    placeholder="Search a dish"
+                >
+                <div class="submit"><p>Search</p></div>
+            </div>
+        </div>
+
         <div class="contentContainer">
             <p>Popular Cases</p>
         
@@ -61,6 +73,19 @@
             showNextWord();
         }, 2000); // Adjust the time as needed
         }
+
+        const input = document.getElementById('searchSubmit');
+        let placeholderIndex = 0;
+        const placeholders = [
+            'I mean, you\'re hungry right?', 'You\'re still here? You must be famished', 
+            'Just tell us what you want to eat, we\'ll show you where', 'Search a dish'
+        ];
+
+        setInterval(() => {
+        input.placeholder = placeholders[placeholderIndex];
+        placeholderIndex = (placeholderIndex + 1) % placeholders.length;
+        }, 5000);
+
 
         showNextWord();
 
