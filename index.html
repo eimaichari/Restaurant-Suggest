@@ -24,19 +24,46 @@
             </div>
         </div>
 
-        <div class="sloganContainer"><p>Whatever we'd like to do</p></div>
+        <div class="sloganContainer">
+            <p class="partOne">Whatever you'd like to eat:</p>
+            <div class="partTwo">
+                <span class="word">PRIME RIB</span>
+                <span class="word">PACKING DUCK</span>
+                <span class="word">COQ au VIN</span>
+                <span class="word">OTORO NIGIRI</span>
+                <span class="word">VEGETABLE CURRY</span>
+            </div>
+        </div>
         <div class="contentContainer">
             <p>Popular Cases</p>
         
-            <div class="content">
-                <div class="cases" id="first"><p>Steakhouse</p></div>
-                <div class="cases" id="sec"><div class="anything"><p>Seafood</p></div></div>
-                <div class="cases" id="thi"><p>Sushi</p></div>
-                <div class="cases" id="for"><p>French</p></div>
-                <div class="cases" id="fif"><p>Chinese</p></div>
-                <div class="cases" id="six"><p>Vege Friendly</p></div>
+            <div class="contentStraightener">
+                <div class="content">
+                    <div class="cases" id="first"><p>Steakhouse</p></div>
+                    <div class="cases" id="sec"><p>Seafood</p></div>
+                    <div class="cases" id="thi"><p>Sushi</p></div>
+                    <div class="cases" id="for"><p>French</p></div>
+                    <div class="cases" id="fif"><p>Chinese</p></div>
+                    <div class="cases" id="six"><p>Vege Friendly</p></div>
+                </div>
             </div>
         </div>
     </div>
+    <script>
+        const words = document.querySelectorAll('.word');
+        let currentWordIndex = 0;
+
+        function showNextWord() {
+        words[currentWordIndex].classList.add('show');
+        setTimeout(() => {
+            words[currentWordIndex].classList.remove('show');
+            currentWordIndex = (currentWordIndex + 1) % words.length;
+            showNextWord();
+        }, 2000); // Adjust the time as needed
+        }
+
+        showNextWord();
+
+    </script>
 </body>
 </html>
