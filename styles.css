@@ -1,0 +1,103 @@
+.mainContainer{
+    width: 100%;
+    height: 1000px;         
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.navigationContainer{
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    z-index:0;
+    width: 90%;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 60px;
+}
+
+.buttonContainer  .button{
+    padding: 0px;
+    margin-right: 23px;
+    width: 60px;
+    color: silver;
+}
+
+.buttonContainer{
+display: flex;
+justify-content: space-between;
+width: 540px;
+height: fit-content;
+}
+
+.sloganContainer{
+    width: fit-content;
+    height: fit-content;
+    padding-left: 47%;
+    padding-top: 10%;
+}
+
+.contentContainer{
+    justify-items: center;
+    text-align: center;
+    font-size: large;
+    position: relative;
+    bottom: 0px;
+    top: 295px;
+}
+
+.content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.cases{
+    height: 260px;
+    align-content: center;
+    justify-items: center;
+    width: 270px;
+    background-size: cover;
+    border-radius: 40px;
+}
+
+.cases .anything{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+}
+
+#first{
+    background-image: url("./First.jpg");
+}
+
+#sec{
+    background-image: url("./Sec.jpg");
+}
+
+#thi{
+    background-image: url("./Thi.jpg");
+}
+
+#for{
+    background-image: url("./for.jpg");
+}
+
+#fif{
+    background-image: url("./fif.jpg");
+}
+
+#six{
+    background-image: url("./six.jpg");
+}
